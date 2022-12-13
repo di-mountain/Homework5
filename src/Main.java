@@ -36,5 +36,21 @@ public class Main {
         } else {
             System.out.println("Это високосный год");
         }
+
+        System.out.println("Задача 4");
+         int deliveryDistance = 101;
+         int deliveryTime;
+         if (deliveryDistance <= 20) {
+             deliveryTime = 1;
+             System.out.println("Потребуется дней: " + deliveryTime);
+         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+             deliveryTime = 2;
+             System.out.println("Потребуется дней: " + deliveryTime);
+         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+             deliveryTime = 3;
+             System.out.println("Потребуется дней: " + deliveryTime);
+         } else {
+             System.out.println("Расстояние до банка превышает 100 км. К сожалению, мы не сможем осуществить доставку(");
+         }
     }
 }
